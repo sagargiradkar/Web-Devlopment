@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RowspanColsSpan</title>
+    <style>
+        table,td,tr,th{
+            border: 2px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="3">Day</th>
+                <th colspan="2">Seminar</th>
+            </tr>
+            <tr>
+                <th colspan="2">Scedule</th>
+                <th rowspan="2">Topic</th>
+            </tr>
+            <tr>
+                <th>Begin</th>
+                <th>End</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2">08.00 am</td>
+                <td rowspan="2">5.00 am</td>
+                <td>Introduction to XML</td>
+            </tr>
+            <tr>
+                <td>Validity:DTD and Relax NG</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Tuesday</td>
+                <td>08.00 am</td>
+                <td>11.00 am</td>
+                <td>Xpath</td>
+            </tr>
+            <tr>
+                <td>11.00 am</td>
+                <td>02.00 am</td>
+                <td rowspan="2">XSL Transformation</td>
+            </tr>
+            <tr>
+                <td>02.00 pm</td>
+                <td>05.00 pm</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>08.00 am</td>
+                <td>12.00 pm</td>
+                <td>XSL Formatting data </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

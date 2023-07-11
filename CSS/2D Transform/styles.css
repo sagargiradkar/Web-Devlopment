@@ -1,0 +1,12 @@
+.box{
+
+    background-color: aquamarine;
+    /* transform: translate(100px,250); */
+    margin: 200px;
+    text-align: center;
+
+    transform: scale(2,4);
+
+    transform: skew(-56deg);
+}
+    

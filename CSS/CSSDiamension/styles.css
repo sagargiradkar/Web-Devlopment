@@ -1,0 +1,25 @@
+.box{
+    background-color: aqua;
+    height: 200px;
+    width: 200px;
+    border: 2px solid red;
+}
+
+.box1{
+    background-color: rgb(174, 0, 255);
+    max-height:500px;
+    max-width: 500px;
+    overflow: scroll;
+    border: 2px solid red;
+}
+.mydiv{
+    margin: 10px;
+    min-height: 100px;
+    border: 1px solid red;
+}
+
+#divi{
+    border: 1px solid red;
+    height: 50px;
+    overflow: auto;
+}

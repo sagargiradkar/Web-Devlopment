@@ -1,0 +1,40 @@
+/* .box{
+    border: 2px solid blue;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    
+}
+p{
+    position: static;
+} */
+
+div{
+    display: inline-block;
+    border: 2px solid black;
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+}
+/* .box{
+    position: relative;
+}
+ */
+
+#box3{
+    position: absolute;
+    /* top: 100px;
+    left: 50px; */
+}
+.box4{
+    position:sticky;
+    
+}
+#box1{
+    position: fixed;
+}
+.rapper{
+    height: 2000px;
+    width: 100vw;
+    background-color: yellowgreen;
+}

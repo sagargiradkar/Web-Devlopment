@@ -4,7 +4,11 @@
     display: flex;
     /* flex-direction: column-reverse; */
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+        
+    /* justify-content: flex-start;
     justify-content: flex-end;
     justify-content: center;
     justify-content: space-around;
@@ -20,7 +24,15 @@
     align-items: flex-start;
     align-items: center;
     align-items: stretch;
-    align-items: baseline;
+    align-items: baseline; */
+    
+    align-content: flex-start;
+    align-content: flex-end;
+    align-content: center;
+    align-content: space-around;
+    align-content: space-between;
+    align-content: space-evenly;
+
 }
 .box{
     border: 1px solid brown;

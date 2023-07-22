@@ -2,6 +2,13 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     border: border-box;
+    padding: 0;
+}
+
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .navbar{
@@ -153,6 +160,7 @@ span{
     /* bottom: 25px;
     position: relative; */
     width: 80%;
+    height: 50px;
     margin-bottom: 25px;
 }
 .hero-message a{
@@ -255,8 +263,11 @@ ul a{
     text-align: center;
 
 }
-.pages{
+.pages a{
+   
+    color: white;
     font-size: 0.7rem ;
+    margin-top: 10px;
     text-align: center;
     padding-top: 25px;
 }

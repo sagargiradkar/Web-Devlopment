@@ -1,0 +1,62 @@
+.container{
+    border: 1px solid brown;
+    background-color: yellow;
+    height: 700px;
+    width: 600px;
+
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px;
+
+    grid-gap: 10px;
+
+    /* justify-content: center;
+    justify-content: start;
+    justify-content: end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly; */
+
+
+    /* align-items: baseline;
+    align-items:center ;
+    align-items: end;
+    align-items: start;
+    align-items: space-between;
+    align-items: space-evenly;
+    align-items: stretch;
+    align-items: end; */
+
+
+
+    /* align-content: baseline;
+    align-content: center;
+    align-content: space-between;
+    align-content: space-evenly;
+    align-content: space-around;
+    align-content: space-between;
+    align-content: flex-end;
+    align-content: start; */
+
+    place-content: center;
+
+    place-items: center;
+
+
+}
+
+.box{
+    border: 1px solid rebeccapurple;
+    background-color: aqua;
+}
+#box1{
+    /* justify-self: start;
+    justify-self: center;
+     */
+
+    /* align-self: center;
+    align-self: first baseline;
+    align-self: flex-end;
+    align-self: self-end; */
+}

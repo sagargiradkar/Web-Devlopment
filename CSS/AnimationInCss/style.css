@@ -19,11 +19,18 @@
     transition-delay: 5s; */
     /* transition: all 200ms ease 3s; */
 
-    transition:transform 3s ease-out;
+    /* transition:transform 3s ease-out;
+    transition-property: transform;
+    transition-duration: 3s;
+
+    transition-delay: 1s; */
+    transition: 3s ease 1s;
 }
 
 .box:hover{
     /* background-color: brown;
     transform: rotate(45deg); */
-    transform: translateX(50px);
+    /* transform: translateX(50px); */
+    background-color: brown;
+    transform: scale(2) translateX(501px) rotate(360deg);
 }

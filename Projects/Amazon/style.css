@@ -275,3 +275,18 @@ ul a{
     padding: 5px;
     
 }
+.box{
+    filter: grayscale(20%);
+    box-shadow: 0 0 20px #333;
+    object-fit: cover;
+}
+
+.box:hover{
+    transform: scale(1.03);
+    transition: 0.5s;
+    filter: drop-shadow(0 0 10px #333);
+    transition: 0.3s;
+}
+.box:hover{
+    filter: grayscale(0%);
+}

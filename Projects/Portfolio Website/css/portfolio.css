@@ -24,12 +24,18 @@ body{
     font-size: 1.6rem;
     font-family: 'Be Vietnam Pro', sans-serif;
 }
-
+#intro{
+    font-size: 50px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 a{
     text-decoration: none;
     color: inherit;
 }
 
+p{
+    line-height: 1.5;
+}
 .container{
     max-width: 1250px;
     padding-left: 2.5rem;
@@ -143,7 +149,7 @@ header{
         transition: all 3s;    
         z-index: -1;
         position: absolute;
-        bottom: -16%;
+        bottom: -9%;
         left: -5%;
     }
 
@@ -469,8 +475,8 @@ header{
         font-weight: 700;
         color: var(--clr-light-gray);
         position: absolute;
-        bottom: -8%;
-        right: -17%;
+        bottom: -7%;
+        right: -0.0%;
         overflow-y: hidden;
         user-select: none;
         text-transform: capitalize;

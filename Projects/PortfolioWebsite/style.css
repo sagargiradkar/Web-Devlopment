@@ -24,12 +24,12 @@ body{
     font-family: 'Be Vietnam Pro', sans-serif;
 }
 
-
 .wrapper{
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
 }
+
 .container{
     width: 1200px;
     margin: 0 auto;
@@ -54,10 +54,12 @@ body{
     align-items: center;
 
 }
+
 .logo-text{
     margin-left: -1.2rem;
     font-size: 28px;
 }
+
 .nav-items{
     display: flex;
     gap: 2rem;
@@ -69,12 +71,15 @@ body{
     font-weight: 500;
     cursor: pointer;
 }
+
 .nav-items div a{
     color: black;
 }
+
 a{
     text-decoration: none;
 }
+
 .nav-items div:hover{
     transition: 0.8s;
     font-weight: bold;
@@ -117,11 +122,13 @@ a{
     font-weight: 500;
 
 }
+
 .role{
     color:#4e45d5 ;
     font-weight: 800;
 
 }
+
 .hero-section-sub-heading{
     font-size:45px ;
     line-height: 45px;
@@ -135,7 +142,7 @@ a{
 }
 
 .btn-pink{
-    background-color:var(--bgOrange);
+    background-color:var(--clr-orange);
     width: fit-content;
     color: white;
     padding: 0.85rem 2.3rem;
@@ -148,6 +155,7 @@ a{
     position: relative;
     z-index: 1;
 }
+
 .btn-pink::before{
    content: " ";
    position: absolute;
@@ -162,21 +170,25 @@ a{
     transition: all 0.8s;
 
 }
+
 .btn-pink:hover::before{
     transform: scale(1);
 }
+
 .btn-pink:hover{
-    border: solid 3px var(--bgOrange);
+    border: solid 3px var(--clr-orange);
     color: black;
 }
 
 .hero-section-right{
     position: relative;
 }
+
 .absolute{
     position:absolute;
 
 }
+
 .user-image{
     padding: 2.5rem;
     filter: grayscale(1);
@@ -185,6 +197,7 @@ a{
     
 
 }
+
 .user-image img{
     z-index:-9;
 }
@@ -236,6 +249,7 @@ a{
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
+
 @keyframes cubeRotate {
     0%{
         transform: rotateY(0deg) translateY(0px);
@@ -274,6 +288,7 @@ a{
     animation:zigzagAnimation 5s ease-in infinite;
 
 }
+
 @keyframes zigzagAnimation  {
 
     50%{
@@ -295,3 +310,186 @@ a{
         left: 48%;
     }
 }
+
+/* Project Section  */
+
+.project-section{
+    background-color: rgb(231, 231,231);
+    margin-top: 4rem;
+
+}
+
+.page-header{
+   color: var(--bgOrange);
+   font-size: 90px;
+   text-align: center;
+   padding: 30px;
+
+}
+
+.projects-container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+.project-card{
+    width: 90%;
+    height: 550px;
+    background-image: url(./images/projects/Project1.png);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    position: relative;
+    box-shadow: 0px 0px 40px #1f1f1f;
+
+}
+
+.project-card::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1f1f1f9a;
+    z-index: 0;
+    /* transform: scaleX(1); */
+
+}
+
+.project-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg,#343d68,#343d68be,#343d687c);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.4s;
+    z-index: 1;
+
+}
+
+.project-card:hover::before{
+    transform: scale(1);    
+}
+
+.project-number{
+    position: absolute;
+    font-size: 200px;
+    font-weight: 600;
+    color: white;
+    z-index: 10;
+    display: none;
+}
+
+.project-card:hover .project-number{
+    display: block;
+}
+
+.project-number-right{
+    right: -40px;
+    top: -45px;
+}
+
+.project-number-left{
+    left: -40px;
+    top: -45px;
+}
+
+.project-content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 2em;
+    bottom: 20%;
+    z-index: 5;
+    gap: 1em;
+    transition: all 0.4s;
+}
+
+.project-content-left{
+    left: 10%;
+}
+
+.project-content-right{
+    right: 10%;
+}
+
+.project-skills-container{
+    width: 60%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    
+}
+
+.project-skills{
+    width: 40px;
+}
+
+.project-heading{
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 3rem;
+
+}
+
+.project-subheading{
+    width: 70%;
+    font-size: 16px;
+    font-style: italic;
+
+}
+
+.btn-grp{
+    display: flex;
+    gap: 0.9rem;
+    align-items: center;
+
+}
+
+.btn-project:hover{
+    border: none;
+}
+
+.icons{
+    cursor: pointer;
+    color: white;
+    font-size: 35px;
+    transition:all 0.4s;
+}
+
+.icons:hover{
+    color: var(--bgOrange);
+}
+
+.project-card:hover .project-content{
+    transform: scale(1.1);
+}
+
+#project-1{
+    background-image: url(./images/projects/Project1.png);
+}
+
+#project-2{
+    margin-left: 120px;
+    background-image: url(./images/projects/Project2.png);
+}
+
+#project-3{
+    background-image: url(./images/projects/Project3.png);
+}
+
+#project-4{
+    margin-left: 120px;
+    background-image: url(./images/projects/Project4.png);
+}
+

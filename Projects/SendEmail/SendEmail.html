@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+   <div class="container">
+    <h1>Working Contact From</h1>
+
+    <div class="main">
+     <form action="">
+
+        <div class="form-input">
+             <label for="">Name</label><br>
+             <input type="text" placeholder="Enter your Name:" id="name">
+        </div>
+
+        <div class="form-input">
+            <label for="">Email</label><br>
+            <input type="text" placeholder="Enter your Email:" id="email">
+        </div>
+
+        <div class="form-input">
+            <label for="">Contact Number</label><br>
+            <input type="text" placeholder="Enter your Contact number:" id="contact">
+        </div>
+
+        <div class="form-input">
+            <label for="">Subject</label><br>
+            <input type="text" placeholder="Enter your subject:" id="subject">
+        </div>
+
+        <div class="form-input">
+            <label for="">Messages</label><br>
+            <textarea name="" id="message" cols="31" rows="4" placeholder="Enter your message...."></textarea>
+        </div>
+
+        <div class="form-input">
+            <button type="button" onclick="SendEmail()"> Send Email</button>
+        </div>
+        
+     </form>
+
+    </div>
+    <!-- end main class -->
+   </div>
+    <!--end Conatiner class  -->
+    
+    <script src="https://smtpjs.com/v3/smtp.js"> </script>
+
+
+    <script>
+        function SendEmail(){
+          let name = document.getElementById("name").value;
+          let email = document.getElementById("email").value;
+          let conatact = document.getElementById("contact").value;
+          let subject = document.getElementById("subject").value;
+          let message = document.getElementById("message").value;
+        
+          let body = "Name:" + name + "<br/> Email:" + email + "<br/> Contact Number:" + conatact + "<br/> Subject:" + subject + "<br/> Messages:" + message;
+        
+        Email.send({
+        SecureToken : "98efb6a3-b0cc-497f-afb7-4617e07a5590",
+        To : 'spgiradkar2002@gmail.com',
+        From : "spgiradkar2002@gmail.com",
+        Subject : "message From Contact Form",
+        Body : body
+         }).then(
+       message => alert(message)
+         );
+
+            
+        }
+    </script>
+
+ 
+</body>
+</html>

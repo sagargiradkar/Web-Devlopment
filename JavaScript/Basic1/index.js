@@ -165,22 +165,72 @@
 // // Arrays 
 
 
-let numbers = [1,2,4,5,7,7,567];
+// let numbers = [1,2,4,5,7,7,567];
 
-console.log(numbers)
+// console.log(numbers)
 
- // we want to check if a number exist in a array or not \
+//  // we want to check if a number exist in a array or not \
 
- if(numbers.indexOf(55) !== -1){
-    console.log("Present")
- }
+//  if(numbers.indexOf(55) !== -1){
+//     console.log("Present")
+//  }
 
-console.log(numbers.indexOf(4,5))
+// console.log(numbers.indexOf(4,5))
 
-let courses = [
-    {no:1,name1:'Sagar'},
-    {no:2 , name1 : "Pavan"}
-]
+// let courses = [
+//     {no:1,name1:'Sagar'},
+//     {no:2 , name1 : "Pavan"}
+// ]
 
-console.log(courses)
+// console.log(courses)
 
+// const t1 = performance.now();
+// for(let i=1 ; i<=100; i++){
+//     let newElement = document.createElement('p');
+//     newElement.textContent = 'This is Para ' + i;
+
+//     document.body.appendChild(newElement);
+// }
+
+// // optimizing a bit
+// const t2 = performance.now();
+// console.log('This took '+(t2-t1) + 'ms');
+
+
+// let myDiv = document.createElement('div');
+
+// for(let i=1 ;i<=100 ;i++){
+//     let element = document.createElement('p');
+//     element.textContent = 'This is a Para '+ i;
+
+//     myDiv.appendChild(element);
+// }
+
+// document.body.appendChild(myDiv);
+
+// function addPara(){
+//     let para = document.createElement('p');
+//     para.textContent = 'Js is Single';
+//     document.body.appendChild(para);
+// }
+
+// function appendNewMessage(){
+//     let para = document.createElement('p');
+
+// }
+
+
+// setTimeout(function(){
+//     console.log("Third");
+// });
+
+
+// function sync(){
+//     console.log('First');
+// }
+
+// sync();
+
+// console.log('Second')
+
+// let meraPromice = new Promise(function)
